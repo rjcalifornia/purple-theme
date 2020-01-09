@@ -6,6 +6,9 @@
  * and open the template in the editor.
  */
 $user = elgg_get_logged_in_user_entity();
+$site_url = elgg_get_site_url();
+$site = elgg_get_site_entity();
+$site_name = $site->name;
 ?>
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
