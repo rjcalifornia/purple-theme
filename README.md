@@ -41,7 +41,7 @@ Purple Admin is released under MIT license. Purple Admin is a free Bootstrap 4 a
 3 - Put it at the end of the plugin list, and activate it
 
 
-<h2>License Information:</h2>
+<h2>PurpleAdmin-Free-Admin-Template Design</h2>
 
 You can get the original template here:
 
