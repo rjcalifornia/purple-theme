@@ -41,7 +41,7 @@ foreach ($default_items as $menu_item) {
             break;
         
         case "blog":
-            $link_icon = "metismenu-icon pe-7s-pen";
+            $link_icon = "mdi mdi-brush menu-icon";
             break;
         
          case "photos":
