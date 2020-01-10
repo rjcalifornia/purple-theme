@@ -34,8 +34,15 @@ Purple Admin is released under MIT license. Purple Admin is a free Bootstrap 4 a
 <h1>How to use Purple Admin?</h1>
 
 
-1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template.git in you terminal to get a copy of this template.
+1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/rjcalifornia/purple-theme.git
 
 2 - After the files have been downloaded you will get a folder with the plugin
 
 3 - Put it at the end of the plugin list, and activate it
+
+
+<h2>License Information:</h2>
+
+You can get the original template here:
+
+https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template.git
