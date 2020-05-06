@@ -12,8 +12,8 @@ $site_name = $site->name;
 ?>
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="index.html"><img src="<?php echo $site_url?>mod/purple-theme/vendors/assets/images/logo.svg" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="<?php echo $site_url?>mod/purple-theme/vendors/assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo" href="<?php echo $site_url?>"><img src="<?php echo $site_url?>mod/purple-theme/vendors/assets/images/logo.svg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="<?php echo $site_url?>"><img src="<?php echo $site_url?>mod/purple-theme/vendors/assets/images/logo-mini.svg" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -101,12 +101,27 @@ if (elgg_is_admin_logged_in())
               </a>
               
             </li>
-            
+            <?php if (elgg_is_logged_in())
+                                         {
+                                             ?>
             <li class="nav-item nav-logout d-none d-lg-block">
               <a class="nav-link" href="<?php echo $site_url ?>action/logout/">
                 <i class="mdi mdi-power"></i>
               </a>
-            </li> 
+            </li>
+             <?php }
+                                            else
+                                            { 
+                                                ?>
+            <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link" href="<?php echo $site_url ?>login/">
+                <i class="mdi mdi-login"></i>
+              </a>
+            </li>
+            
+            
+             <?php }
+                                             ?>
           </ul>
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
